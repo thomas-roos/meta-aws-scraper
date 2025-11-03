@@ -52,11 +52,11 @@ def color_version(ver, versions):
     except:
         return ver
     if ver == unique[0]:
-        return f'<span style="color:green">**{ver}**</span>'
+        return f"🟢 **{ver}**"
     elif ver == unique[-1]:
-        return f'<span style="color:red">{ver}</span>'
+        return f"🔴 {ver}"
     else:
-        return f'<span style="color:orange">{ver}</span>'
+        return f"🟡 {ver}"
 
 def main():
     print("Fetching current Yocto releases...", file=sys.stderr)
